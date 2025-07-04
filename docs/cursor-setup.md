@@ -24,6 +24,9 @@ This guide explains how to configure Cursor to use the TomTom MCP Server for loc
         }
     }
     ```
+2. You can see the TomTom MCP tools in Cursor tools menu.
+
+![img.png](../images/cursor.png)
 
 ## Troubleshooting
 
