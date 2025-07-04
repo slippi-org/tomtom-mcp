@@ -1,0 +1,9 @@
+# Exclude unnecessary files from the npm package
+.git
+.github
+node_modules
+coverage
+tests
+*.test.*
+*.config.*
+*.md
