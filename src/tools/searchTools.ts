@@ -25,7 +25,6 @@ import {
   createNearbySearchHandler,
 } from "../handlers/searchHandler";
 
-
 /**
  * Creates and registers search-related tools
  */

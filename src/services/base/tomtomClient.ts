@@ -25,7 +25,7 @@ dotenv.config();
  * TomTom API configuration constants
  */
 export const CONFIG = {
-  VERSION: "1.0.1", // Version from package.json
+  VERSION: "1.0.2", // Version from package.json
   BASE_URL: "https://api.tomtom.com",
 } as const;
 

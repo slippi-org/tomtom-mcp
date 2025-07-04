@@ -1,6 +1,6 @@
 {
   "name": "@tomtom-org/tomtom-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server integrating TomTom APIs",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -73,6 +73,14 @@
     "node": ">=22.9.0"
   },
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomtom-international/tomtom-mcp.git"
+  },
+  "homepage": "https://github.com/tomtom-international/tomtom-mcp",
+  "bugs": {
+    "url": "https://github.com/tomtom-international/tomtom-mcp/issues"
+  },
   "os": [
     "win32",
     "darwin",
