@@ -1,0 +1,82 @@
+{
+  "dxt_version": "0.1",
+  "name": "tomtom-mcp",
+  "display_name": "TomTom MCP Extension",
+  "version": "1.0.3",
+  "description": "Connects Claude Desktop with TomTom APIs using MCP.",
+  "long_description": "The TomTom MCP Server simplifies geospatial development by providing seamless access to TomTom’s location services, including search, routing, traffic and static maps data. It enables easy integration of precise and accurate geolocation data into AI workflows and development environments.",
+  "author": {
+    "name": "TomTom"
+  },
+  "homepage": "https://developer.tomtom.com/",
+  "documentation": "https://developer.tomtom.com/tomtom-mcp/documentation/overview",
+  "icon": "images/TomTom-logo.png",
+  "server": {
+    "type": "node",
+    "entry_point": "bin/tomtom-mcp.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/bin/tomtom-mcp.js"],
+      "env": {
+        "TOMTOM_API_KEY": "${user_config.tomtom_api_key}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "gecode",
+      "description": "Convert addresses to coordinates with global coverage"
+    },
+    {
+      "name": "reverse-geocode",
+      "description": "Get addresses from GPS coordinates"
+    },
+    {
+      "name": "fuzzy-search",
+      "description": "Intelligent search with typo tolerance"
+    },
+    {
+      "name": "poi-search",
+      "description": "Find specific business categories"
+    },
+    {
+      "name": "nearby",
+      "description": "Discover services within a radius"
+    },
+    {
+      "name": "routing",
+      "description": "Calculate optimal routes between locations"
+    },
+    {
+      "name": "waypoint-routing",
+      "description": "Multi-stop route planning Routing API"
+    },
+    {
+      "name": "reachable-range",
+      "description": "Determine coverage areas by time/distance"
+    },
+    {
+      "name": "traffic",
+      "description": "Real-time incidents data"
+    },
+    {
+      "name": "static-map",
+      "description": "Generate custom map images"
+    }
+  ],
+  "tools_generated": true,
+  "user_config": {
+    "tomtom_api_key": {
+      "type": "string",
+      "title": "TomTom API Key",
+      "description": "Your TomTom API key used to authenticate with TomTom services.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomtom-international/tomtom-mcp.git"
+  }
+}
