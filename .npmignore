@@ -7,3 +7,14 @@ tests
 *.test.*
 *.config.*
 *.md
+*.log
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.backup
+.env*.local
